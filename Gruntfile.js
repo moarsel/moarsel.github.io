@@ -276,7 +276,7 @@ module.exports = function (grunt) {
           commit: true,
           push: true,
           message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%',
-          remote: 'git@github.com:moarsel/portfolio.git',
+          remote: 'git@github.com:moarsel/moarsel.github.io.git',
           branch: 'master'
         }
       }
