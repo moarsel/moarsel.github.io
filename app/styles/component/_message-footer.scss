@@ -1,0 +1,15 @@
+.message-footer{
+	@include row();
+	text-align:center;
+	font-family: $sans-serif;
+	padding: 50px;
+	background-color: $base-background-color;
+	border: 1px solid #ebecf0;
+	border-width: 1px 0;
+	clear:both;
+}
+
+.message-footer h2 {
+	font-size:2em;
+}
+

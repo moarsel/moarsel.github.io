@@ -1,0 +1,77 @@
+.accordion-tabs-minimal {
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-border-color: #DDD8D1;
+  $base-background-color: $base-secondary-background;
+  $base-spacing: 1.5em !default;
+  $base-accent-color: #477DCA !default;
+  $base-link-color: $base-accent-color !default;
+  $dark-gray: #333 !default;
+  $medium-screen: em(640) !default;
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $tab-link-color: $dark-gray;
+  $tab-border: 1px solid $base-border-color;
+  $tab-active-background: $base-background-color;
+  $tab-inactive-color: $base-background-color;
+  $tab-inactive-hover-color: silver;
+  $tab-mode: $medium-screen;
+
+  @include clearfix;
+  line-height: 1.5;
+  padding: 0;
+
+
+  li.tab-header-and-content {
+    list-style: none;
+
+      display: inline;
+
+  }
+
+  a.tab-link {
+    
+    background-color: $tab-inactive-color;
+    border-top: $tab-border;
+    font-family: $serif;
+    font-size:1.6em;
+    color: $tab-link-color;
+    display: block;
+    font-weight: 400;
+    padding: ($base-spacing / 2) $gutter;
+    text-decoration: none;
+    @include span-columns(4);
+    margin-right:0;
+    display: inline-block;
+    float:none;
+    border-top: 0;
+    margin-bottom:4px;
+
+    &:hover {
+      color: $base-link-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.is-active {
+
+        border: $tab-border;
+        border-bottom-color: $tab-active-background;
+        margin-bottom: -1px;
+        padding-bottom:27px;
+
+    }
+  }
+
+  .tab-content {
+    display: none;
+    padding: $base-spacing $gutter;
+    width: 100%;
+    background:$base-background-color;
+
+      border-top: $tab-border;
+      float: left;
+
+  }
+}

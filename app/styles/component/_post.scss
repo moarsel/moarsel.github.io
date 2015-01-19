@@ -1,0 +1,45 @@
+.post__feature {
+	height:27em;
+	color:#FFF;
+	background: linear-gradient(transparent, black);
+	h1 {
+		margin:0;
+	}
+}
+
+.post__feature-img {
+	max-width: 100%;
+	position:absolute;
+	z-index:-1;
+}
+
+
+
+.post__feature-text {
+	max-width: 34em;
+	padding:2em 2em 0 2em;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.post__description {
+	margin-bottom: 0.5em;
+}
+
+.article-wrapper {
+	background:#f9f9f9;
+	@include row();
+}
+
+article {
+	background:#FAFAFA;
+	max-width:34em;
+	  margin:auto;
+	  padding:0 1em;
+
+	h1 {
+		padding-top: 1em;
+		margin-top: 0;
+		text-align:center;
+	}
+}

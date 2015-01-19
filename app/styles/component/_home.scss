@@ -1,0 +1,228 @@
+body {
+	background-image: url("/images/polygonal-background.png");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.portfolio__header{
+
+	text-align: center;
+	background-image: url("/images/polygonal-background.png");
+	background-size:cover;
+	background-attachment: fixed;
+	height: 26em;
+	
+
+	.portfolio__header-text {
+		font-size:1.3em;
+		position: relative;
+		// bottom: 14em;
+		margin-right: auto;
+		margin-left: auto;
+		width: 27em;
+		// bottom: 50%;
+
+		-webkit-transform: translateY(-10em);
+
+		@include media($mobile) {
+	      font-size: 1.1em;
+	      // bottom:0;
+	      // margin-top:1em;
+	      transform: translateY(-10em);
+	      width: 20em;
+	    }
+	    @include media($medium-screen) {
+	      // font-size: 1em;
+	      // bottom:0;
+	      // margin-top:0em;
+	      // width: 28em;
+	    }
+	}
+
+	img {
+		width: 100%;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:2em;
+		max-width: 38em;
+		min-width:25em;
+	}
+}
+
+
+.profile {
+	padding-top: 1em;
+	background: #FCFBF9;
+	
+}
+
+.profile__inner{
+	@include outer-container;
+}
+
+.profile__header {
+	text-align: center;
+}
+
+
+.profile__pic {
+	text-align:center;
+	padding: 1em;
+	@include shift(1);
+	@include span-columns(8);
+	@include omega();
+	max-height: 263px;
+	max-width: 240px;
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+	@include media($large-screen) {
+      @include span-columns(4);
+    }
+}
+
+.profile__description{
+	@include span-columns(12);
+	@include media($large-screen) {
+      @include span-columns(7);
+    }
+	padding: 0 2em 0 2em;
+}
+
+.profile__cta {
+
+	@include span-columns(12);
+	@include outer-container();
+	background: $base-secondary-background;
+	border: 1px solid #DDD8D1;
+	font-size: 1.3em;
+	margin-top:1em;
+	margin-bottom: 3em;
+	padding:2em;
+	text-align: center;
+}
+
+
+.projects {
+	// @include outer-container;
+	background:#FCFBF9;
+	padding-top:1em;
+    margin-bottom: 2em;
+
+    h1 {
+    	text-align:center;
+    }
+}
+
+
+.project-display {
+	@include outer-container;
+	padding-bottom:6em;
+
+}
+
+.projects__project_primary {
+	padding: 2em 0 2em 0;
+	@include row();
+
+	h3 {
+		margin-top: 0;
+	}
+
+	.caption {
+		padding: 0 2em 0 2em;
+		@include span-columns(6);
+
+		@include media($mobile) {
+	 		@include span-columns(12 of 12);
+
+	 		h3 {
+	 			margin-top:1em;
+	 		}
+    	}
+	}
+	 img {
+	 	@include span-columns(6);
+
+	 	@include media($mobile) {
+	 		@include span-columns(12);
+	 		max-width: 100%;
+    	}
+	 }
+}
+
+.projects__project:last-child {
+		border-left: 1px solid #AAA;
+}
+.projects__project{
+	// background: #F4F1EC;
+	@include span-columns(12);
+	margin-top:2em;
+	// margin-right:0 !important;
+
+
+	.caption {
+		@include span-columns(7 of 12);
+	}
+
+	img {
+	 	margin-top:1em;
+	 	padding-left:0;
+	 	@include span-columns(5 of 12);
+	}
+
+	h3 {
+		margin: 1em 0 1em 1em;
+	}
+	p {
+		margin-left: 1em;
+	}
+
+
+	 @include media($large-screen) {
+	 	
+	 	padding: 0 0 1em 0;
+
+	 	@include span-columns(6 of 12);
+
+	 	img {
+	 		margin-top:4em;
+	 		// padding-left:1em;
+	 	}
+    }
+}
+
+.tabs {
+	margin-bottom:2em;
+}
+
+
+.tab-header{
+	font-size: 1.5em;
+	font-family: $serif;
+}
+
+.skills-list{
+	font-size: 1em;
+	line-height: 2.5em;
+
+	i {
+		margin:0.5em 0.5em 0 1em;
+		font-size:1.5em;
+	}
+}
+
+.resume {
+	@include outer-container;
+	p, ul {
+		font-size: 0.8em;
+	}
+}
+
+.resume__paper {
+	background: #FEFEFE;
+	padding: 2em;
+	margin: 1em auto 1em auto;
+	max-width:45em;
+}
+

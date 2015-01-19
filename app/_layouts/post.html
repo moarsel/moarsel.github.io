@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <script href="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    {% include shared/styles.html %}
+
+    <!-- build:js({app,.tmp}) /scripts/modernizr.js -->
+    <script src="/vendor/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+
+  <body class="post-body">
+    <!--[if lt IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <header class="post__feature">
+
+    {% if page.img.large %}
+    <img class="post__feature-img" src="/images/_posts/{{ page.img.large }}">
+    {% endif %}
+
+    <div class="post__feature-text">
+    <h1 class="post__title">{{ page.title }}</h1>
+      <span class="post__date "><em>{{ page.date | date: '%B %Y' }}</em></span><br>
+      <p class="post__description lead">{{ page.description }}</p>
+      <a href="/" class="secondary-btn"><i class="fa fa-home"></i> Home</a>
+      <a href="mailto:russell.hoy@gmail.com?sqs_title=Drop+me+a+line" class="primary-btn"><i class="fa fa-send"></i> Message Me</a>
+    </div>
+  </header>
+
+  <div class="article-wrapper">
+    <article>
+    {{ content }}
+    </article>
+  </div>
+
+    {% include shared/footer.html %}
+
+    {% include shared/scripts.html %}
+    <script src="https://squaresend.com/squaresend.js"></script>
+    {% include shared/google-analytics.html %}
+  </body>
+</html>

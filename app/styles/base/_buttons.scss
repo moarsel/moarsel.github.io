@@ -1,0 +1,68 @@
+button,
+input[type="submit"] {
+  @extend %button;
+  @include appearance(none);
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  
+}
+
+
+.small-rnd-btn{
+	@extend %button;
+	@include appearance(none);
+	background-color: transparent;
+	color:#111;
+	border: 2px solid #111;
+	border-radius:2em;
+	cursor: pointer;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	font-size: 0.65em;
+	font-family: $sans-serif;
+}
+
+.twitter-btn {
+	@extend %button;
+	@include appearance(none);
+	background-color: #55acee;
+	color:#FFF;
+	cursor: pointer;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	font-family: $sans-serif;
+	margin-left:1em;
+	&:hover {
+		background: #66757f;
+	}
+}
+
+.primary-btn{
+	@extend %button;
+	@include appearance(none);
+	background-color: #343434;
+	border: none;
+	cursor: pointer;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	font-family: $sans-serif;
+}
+
+.secondary-btn {
+	@extend %button;
+	@include appearance(none);
+	background-color: #F9F9F9;
+	color: #333;
+	border: none;
+	cursor: pointer;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	font-family: $sans-serif;
+}
