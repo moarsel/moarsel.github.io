@@ -5,7 +5,7 @@ title: Russell Hoy | Web Developer
 
 <section class="portfolio__header">
   <div class="intro-text">
-  <img src="images/russell-hoy-1.svg">
+  <img src="images/russell-hoy.svg" alt="Russell Hoy">
     <p class="portfolio__header-text">Hello! I’m a young web developer who gets excited about building user-centric products and helpful tools.</p>
   </div>
 </section>
@@ -32,7 +32,7 @@ title: Russell Hoy | Web Developer
     {% for post in site.categories.works limit:1 %}
     <div class="projects__project_primary">            
       <div class="thumbnail">
-      <img src='/images/_posts/{{ post.img["thumb"] }}'>
+      <img src='/images/posts/{{ post.img["thumb"] }}'>
       </div>
         <div class="caption">
             <h3>{{ post.title }}</h3>
@@ -49,7 +49,7 @@ title: Russell Hoy | Web Developer
       {% for post in site.categories.works limit:1 offset:1 %}
       <div class="projects__project">            
         <div class="thumbnail">
-          <img src='/images/_posts/{{ post.img["thumb"] }}'>
+          <img src='/images/posts/{{ post.img["thumb"] }}'>
         </div>
           <div class="caption">
               <h3>{{ post.title }}</h3>
@@ -68,7 +68,7 @@ title: Russell Hoy | Web Developer
               <p><a href="{{ post.url }}" class=" small-rnd-btn">Read more <i class="fa fa-angle-double-right"></i></a></p>
           </div>
           <div class="thumbnail">
-          <img src='/images/_posts/{{ post.img["thumb"] }}'>
+          <img src='/images/posts/{{ post.img["thumb"] }}'>
         </div>
         </div>
   {% endfor %}
