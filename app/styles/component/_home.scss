@@ -27,8 +27,8 @@ body {
 		@include media($mobile) {
 	      font-size: 1.1em;
 	      // bottom:0;
-	      // margin-top:1em;
-	      transform: translateY(-10em);
+	      margin-top:-2em;
+	      // transform: translateY(-10em);
 	      width: 20em;
 	    }
 	    @include media($medium-screen) {
@@ -39,7 +39,7 @@ body {
 	    }
 	}
 
-	img {
+	img,svg {
 		width: 100%;
 		margin-left:auto;
 		margin-right:auto;
@@ -49,6 +49,19 @@ body {
 	}
 }
 
+.portfolio__header .arrow:hover {
+		fill:black;
+		// transform: scale(10px);
+		cursor:pointer;
+	}
+
+.fallback { 
+  display: none;
+  /* Make sure it's the same size as the SVG takes up */
+}
+.no-svg .fallback { 
+  background-image: url(russell-hoy.png); 
+}
 
 .profile {
 	padding-top: 1em;
