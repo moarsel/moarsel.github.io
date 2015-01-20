@@ -5,37 +5,25 @@ body {
 }
 
 .portfolio__header{
-
 	text-align: center;
 	background-image: url("/images/polygonal-background.png");
 	background-size:cover;
 	background-attachment: fixed;
 	height: 26em;
-	
 
 	.portfolio__header-text {
 		font-size:1.3em;
 		position: relative;
-		// bottom: 14em;
 		margin-right: auto;
 		margin-left: auto;
 		width: 27em;
-		// bottom: 50%;
-
+		transform: translateY(-10em);
 		-webkit-transform: translateY(-10em);
 
 		@include media($mobile) {
 	      font-size: 1.1em;
-	      // bottom:0;
 	      margin-top:-2em;
-	      // transform: translateY(-10em);
 	      width: 20em;
-	    }
-	    @include media($medium-screen) {
-	      // font-size: 1em;
-	      // bottom:0;
-	      // margin-top:0em;
-	      // width: 28em;
 	    }
 	}
 
@@ -51,13 +39,11 @@ body {
 
 .portfolio__header .arrow:hover {
 		fill:black;
-		// transform: scale(10px);
 		cursor:pointer;
 	}
 
 .fallback { 
   display: none;
-  /* Make sure it's the same size as the SVG takes up */
 }
 .no-svg .fallback { 
   background-image: url(russell-hoy.png); 
@@ -171,7 +157,7 @@ body {
 	// background: #F4F1EC;
 	@include span-columns(12);
 	margin-top:2em;
-	// margin-right:0 !important;
+	margin-right:0 !important;
 
 
 	.caption {
@@ -194,7 +180,7 @@ body {
 
 	 @include media($large-screen) {
 	 	
-	 	padding: 0 0 1em 0;
+	 	padding: 0 1em 1em 1em;
 
 	 	@include span-columns(6 of 12);
 

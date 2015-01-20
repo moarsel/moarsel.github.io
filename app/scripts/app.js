@@ -2,10 +2,8 @@ $(document).ready(function () {
   'use strict';
 
   $(".portfolio__header .arrow").on("click", function() {
-      // alert('bam');
       var offset = $(".profile").offset().top;
-        jQuery('html,body').animate({
-          scrollTop: offset }, 1000, 'swing');
+      $('html,body').animate({scrollTop: offset }, 1000, 'swing');
   });
 
   $('.accordion-tabs-minimal').each(function () {

@@ -20,12 +20,9 @@
   line-height: 1.5;
   padding: 0;
 
-
   li.tab-header-and-content {
     list-style: none;
-
-      display: inline;
-
+    display: inline;
   }
 
   a.tab-link {
@@ -41,6 +38,7 @@
     text-decoration: none;
     @include span-columns(4);
     margin-right:0;
+    margin-left: 4px;
     display: inline-block;
     float:none;
     border-top: 0;
@@ -58,7 +56,7 @@
 
         border: $tab-border;
         border-bottom-color: $tab-active-background;
-        margin-bottom: -1px;
+        margin: 0 0 -1px 0;
         padding-bottom:27px;
 
     }
