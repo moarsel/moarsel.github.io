@@ -1,10 +1,10 @@
 $(document).ready(function () {
   'use strict';
 
-  $(".portfolio__header .arrow").on("click", function() {
-      var offset = $(".profile").offset().top;
+  $('.portfolio__header .arrow').on('click', function () {
+      var offset = $('.profile').offset().top;
       $('html,body').animate({scrollTop: offset }, 1000, 'swing');
-  });
+    });
 
   $('.accordion-tabs-minimal').each(function () {
     $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();

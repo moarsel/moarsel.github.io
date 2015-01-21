@@ -2,7 +2,7 @@ $browser-top-bar-height: 1.5em;
 $browser-circle-size: .5em; 
 $browser-circle-margin: ($browser-top-bar-height - $browser-circle-size) / 2;
 $browser-top-bar-background: lighten(#DFDFDF, 5);
-$browser-border: 0px;
+$browser-border: 0;
 $browser-background: $base-background-color;
 $browser-content-background-1: #F0F0F0;
 $browser-content-background-2: $base-background-color;
@@ -31,7 +31,7 @@ $browser-content-background-3: #F0F0F0;
 
 .browser-circle {
   border-radius: $browser-circle-size * 2;
-  box-shadow: 0 1px 0px transparentize(white, .5), inset 0 1px 1px transparentize(black, 0.8);
+  box-shadow: 0 1px 0 transparentize(white, .5), inset 0 1px 1px transparentize(black, 0.8);
   display: inline-block;
   @include size($browser-circle-size);
   margin: $browser-circle-margin 0;
