@@ -4,6 +4,8 @@ body {
 	background-attachment: fixed;
 }
 
+
+
 .portfolio__header{
 	text-align: center;
 	// background-image: url("/images/polygonal-background.png");
@@ -49,7 +51,7 @@ body {
 }
 
 .profile {
-	padding-top: 1em;
+	padding: 3em 0 3em 0;
 	background: #FCFBF9;
 	
 }
@@ -111,6 +113,7 @@ body {
 	@include outer-container(100%);
 	background:#FCFBF9;
 	padding-top:1em;
+
     margin-bottom: 2em;
 
     h1 {
@@ -125,7 +128,8 @@ body {
 }
 
 .projects__project_primary {
-	padding: 2em 1em 2em 1em;
+	// padding: 2em 1em 2em 1em;
+	padding: 3em 1em 3em 1em;
 	position:relative;
 	@include row();
 	// box-shadow: 0 6px 8px RGBA(0,0,0,0.3);
