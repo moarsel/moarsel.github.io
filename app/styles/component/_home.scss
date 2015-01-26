@@ -1,15 +1,15 @@
 body {
-	background-image: url("/images/polygonal-background.png");
+	background-image: url("/images/polygonal-background-1.png");
 	background-size: cover;
 	background-attachment: fixed;
 }
 
 .portfolio__header{
 	text-align: center;
-	background-image: url("/images/polygonal-background.png");
+	// background-image: url("/images/polygonal-background.png");
 	background-size:cover;
 	background-attachment: fixed;
-	height: 26em;
+	height: 25em;
 
 	.portfolio__header-text {
 		font-size:1.3em;
@@ -31,9 +31,9 @@ body {
 		width: 100%;
 		margin-left:auto;
 		margin-right:auto;
-		margin-top:2em;
+		margin-top:0;
 		max-width: 38em;
-		min-width:25em;
+		min-width:26em;
 	}
 }
 
@@ -64,8 +64,9 @@ body {
 
 
 .profile__pic {
+
 	text-align:center;
-	padding: 1em;
+	// padding: 1em;
 	@include shift(1);
 	@include span-columns(8);
 	@include omega();
@@ -76,21 +77,25 @@ body {
 	margin-right:auto;
 	@include media($large-screen) {
       @include span-columns(4);
+      @include shift(1);
     }
 }
 
 .profile__description{
-	@include span-columns(12);
+	@include span-columns(9);
+	@include shift(2);
 	@include media($large-screen) {
-      @include span-columns(7);
+		@include shift(0);
+      @include span-columns(6);
+      padding:0 0 0 1em;
     }
-	padding: 0 2em 0 2em;
+	// padding: 0 2em 0 2em;
 }
 
 .profile__cta {
 
 	@include span-columns(12);
-	@include outer-container();
+	// @include outer-container();
 	background: $base-secondary-background;
 	border: 1px solid #DDD8D1;
 	font-size: 1.3em;
@@ -102,7 +107,7 @@ body {
 
 
 .projects {
-	// @include outer-container;
+	@include outer-container(100%);
 	background:#FCFBF9;
 	padding-top:1em;
     margin-bottom: 2em;
@@ -114,14 +119,16 @@ body {
 
 
 .project-display {
-	@include outer-container;
-	padding-bottom:6em;
-
+	// @include outer-container;
+	// padding-bottom:6em;j
 }
 
 .projects__project_primary {
 	padding: 2em 1em 2em 1em;
+	position:relative;
 	@include row();
+	// box-shadow: 0 6px 8px RGBA(0,0,0,0.3);
+	
 
 	h3 {
 		margin-top: 0;
@@ -149,25 +156,30 @@ body {
 	 }
 }
 
-.projects__project:last-child {
-		border-left: 1px solid #AAA;
-}
+
 .projects__project{
-	// background: #F4F1EC;
-	@include span-columns(12);
-	margin-top:2em;
+	border-top: 1px solid #AAA;
+	background: $base-secondary-background;
+	height: 16.5em;
+
+	// @include span-columns(12);
+	// @include omega;
+	
+
 	margin-right:0 !important;
 
 
 	.caption {
-		@include span-columns(7 of 12);
-		font-size:0.9em;
+		@include span-columns(10 of 12);
+		// @include omega;
+		// @include shift(1);
+		// font-size:0.9em;
 	}
 
 	img {
 	 	margin-top:1em;
 	 	padding:0 1em 0 1em;
-	 	@include span-columns(5 of 12);
+	 	// @include span-columns(5 of 12);
 	}
 
 	h3 {
@@ -180,10 +192,12 @@ body {
 
 	 @include media($large-screen) {
 	 	
-	 	padding: 0 1em 1em 1em;
+	 	padding: 1em 1em 1em 1em;
+		height: 18em;
+	 	@include span-columns(6 of 12, block-collapse);
 
-	 	@include span-columns(6 of 12);
-
+		// @include shift(0);
+		// @include omega();
 	 	img {
 	 		margin-top:4em;
 	 		padding:0;
@@ -191,6 +205,7 @@ body {
 	 	}
     }
 }
+
 
 .tabs {
 	margin-bottom:2em;

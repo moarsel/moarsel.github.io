@@ -45,12 +45,8 @@ title: Russell Hoy | Web Developer
   {% endfor %}
 
   <div class="projects__secondary">
-
       {% for post in site.categories.works limit:1 offset:1 %}
-      <div class="projects__project">            
-        <div class="thumbnail">
-          <img src='/images/posts/{{ post.img["thumb"] }}'>
-        </div>
+      <div class="projects__project">           
           <div class="caption">
               <h3>{{ post.title }}</h3>
               <p>{{ post.description }}</p>
@@ -67,9 +63,9 @@ title: Russell Hoy | Web Developer
               <p>{{ post.description }}</p>
               <p><a href="{{ post.url }}" class=" small-rnd-btn">Read more <i class="fa fa-angle-double-right"></i></a></p>
           </div>
-          <div class="thumbnail">
+         <!--  <div class="thumbnail">
           <img src='/images/posts/{{ post.img["thumb"] }}'>
-        </div>
+        </div> -->
         </div>
   {% endfor %}
   </div>
@@ -149,8 +145,7 @@ title: Russell Hoy | Web Developer
     <a href="#" class="tab-link tab-header">Toolbelt</a>
     <div class="tab-content">
       <p>
-      <h3>Here are some technologies, frameworks, and toolsets I have been using.</h3>
-      <p><em>(Some of these are still a work in progress: W.I.P.)</em></p>
+      <p class="lead">Here are some technologies, frameworks, and toolsets I have been using.</p>
     <table cellspacing="0" cellpadding="0">
     <tbody><tr>
       <th>Front End</th><th>Back End</th><th>Other</th>
@@ -165,10 +160,10 @@ title: Russell Hoy | Web Developer
       <td>Javascript, JQuery, Backbone (W.I.P.) & Angular (W.I.P) </td><td> Node + Express (W.I.P.)</td><td>Git, Grunt, Bower, Yeoman</td>
     </tr>
     <tr>
-      <td>Accessibility & WCAG 2.0 (W.I.P) </td><td>Firebase & Meteor (W.I.P)</td><td>Mockup Software</td>
+      <td>Accessibility & WCAG 2.0 (W.I.P) </td><td></td><td>Balsamiq Mockups</td>
     </tr>
   </tbody></table>
-
+      <em>(Some of these are still a work in progress: W.I.P.)</em>
       </p>    
     </div>
   </li>

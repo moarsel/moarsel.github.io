@@ -35,10 +35,12 @@
     display: block;
     font-weight: 400;
     padding: ($base-spacing / 2) $gutter;
+    padding-left:0.5em;
     text-decoration: none;
     @include span-columns(4);
     margin-right:0;
     margin-left: 4px;
+    text-align:center;
     display: inline-block;
     float:none;
     border-top: 0;
