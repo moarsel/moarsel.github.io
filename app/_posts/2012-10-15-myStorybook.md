@@ -12,7 +12,7 @@ img:
 
 # The Idea
 
-[MyStorybook.com](https://mystorybook.com) is a platform for making and printing children's storybooks. Although the idea came up in 2013, over the summer of 2014 I built out most of the functionality as an experiment in building a service that was simple enough for kids and teachers to use and enjoy. Between the design, front end development, back end development, and marketing strategy, it was a pretty huge undertaking for a solo developer. While the project is still ongoing, I'm happy to say that in many ways it has been successful.
+[MyStorybook.com](https://www.mystorybook.com) is a platform for making and printing children's storybooks. Although the idea came up in 2013, over the summer of 2014 I built out most of the functionality as an experiment in building a service that was simple enough for kids and teachers to use and enjoy. Between the design, front end development, back end development, and marketing strategy, it was a pretty huge undertaking for a solo developer. While the project is still ongoing, I'm happy to say that in many ways it has been successful.
 
 ## A Tour of MyStorybook.com
 
