@@ -50,10 +50,6 @@
       color: $base-link-color;
     }
 
-    &:focus {
-      outline: none;
-    }
-
     &.is-active {
 
         border: $tab-border;
@@ -63,6 +59,11 @@
 
     }
   }
+
+ a.tab-link:focus {
+    outline: 4px solid #b3a794;
+    outline-offset: -4px;
+}
 
   .tab-content {
     display: none;

@@ -4,7 +4,9 @@ body {
 	background-attachment: fixed;
 }
 
-
+.card-inner {
+	background-color:#FFF;
+}
 
 .portfolio__header{
 	text-align: center;
@@ -18,24 +20,17 @@ body {
 		position: relative;
 		margin-right: auto;
 		margin-left: auto;
-		width: 27em;
-		transform: translateY(-10em);
-		-webkit-transform: translateY(-10em);
+		max-width: 27em;
+		transform: translateY(-10.5em);
+		-webkit-transform: translateY(-10.5em);
+		background-color: #f3f5f6;
+		padding: 0 2em 1em 2em;
 
-		@include media($mobile) {
-	      font-size: 1.1em;
-	      margin-top:-2em;
-	      width: 20em;
-	    }
 	}
 
 	img,svg {
-		width: 100%;
-		margin-left:auto;
-		margin-right:auto;
-		margin-top:0;
-		max-width: 38em;
-		min-width:26em;
+		width: 101%;
+		margin-left:-2px;
 	}
 }
 
@@ -234,8 +229,13 @@ body {
 
 .resume {
 	@include outer-container;
+
 	p, ul {
 		font-size: 0.8em;
+	}
+	
+	.half-screen {
+		@include span-columns(6 of 12);
 	}
 }
 
@@ -244,5 +244,7 @@ body {
 	padding: 2em;
 	margin: 1em auto 1em auto;
 	max-width:45em;
+	// TODO: hack
+	padding-bottom: 22em;
 }
 
