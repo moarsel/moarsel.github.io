@@ -1,6 +1,9 @@
 {
   "name": "playbook",
   "version": "0.0.0",
+  "scripts": {
+    "serve": "grunt serve"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-build-control": "~0.1.2",

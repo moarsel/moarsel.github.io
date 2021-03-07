@@ -1,66 +1,64 @@
-  body {
-    -webkit-font-smoothing: antialiased;
-    background-color: $base-background-color;
-    color: $base-font-color;
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $unitless-line-height;
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: $base-background-color;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $unitless-line-height;
+}
+
+$sans-serif: "Raleway", sans-serif;
+$serif: "Arvo", serif;
+
+h1 {
+  font-family: $serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+
+  @include media($medium-screen) {
+    font-size: 2.6em;
   }
+}
 
-  $sans-serif: 'Questrial', sans-serif;
-  $serif: 'Arvo', serif;
+h2 {
+  font-family: $serif;
+  // font-style: italic;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin-bottom: 1.1em;
 
-
-
-  h1 {
-    font-family: $serif;
-    font-size: 1.8em;
-    font-weight: 700;
-    margin-bottom: .5em;
-
-    @include media($medium-screen) {
-      font-size: 2.6em;
-    }
+  @include media($medium-screen) {
+    font-size: 1.3em;
   }
+}
 
-  h2 {
-    font-family: $serif;
-    // font-style: italic;
-    font-size: 1.2em;
-    font-weight: 400;
-    line-height: 1.4em;
-    margin-bottom: 1.1em;
+h3 {
+  font-family: $serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-bottom: 0.4em;
+}
 
-    @include media($medium-screen) {
-      font-size: 1.3em;
-    }
-  }
+p {
+  font-family: $sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-size: 1.15em;
+  margin-bottom: 1.5em;
+}
 
-  h3 {
-    font-family: $serif;
-    font-size: 1.4em;
-    font-weight: 400;
-    line-height: 1.3em;
-    margin-bottom: .4em;
-  }
+li {
+  font-family: $sans-serif;
+  line-height: 1.5em;
+  font-size: 1em;
+}
 
-  p {
-    font-family: $sans-serif;
-    line-height: 1.5em;
-    font-size: 1.25em;
-    margin-bottom: 1.5em;
-  }
-
-  li {
-    font-family: $sans-serif;
-    line-height: 1.5em;
-    font-size: 1em;
-  }
-  
-  hr {
-    width: 3em;
-  }
-
+hr {
+  width: 3em;
+}
 
 .lead {
   font-size: 1.5em;
